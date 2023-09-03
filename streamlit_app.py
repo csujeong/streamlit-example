@@ -37,7 +37,7 @@ with st.echo(code_location='below'):
 #from dotenv import load_dotenv
 #load_dotenv()
 
-# langchain, chat 모드 사용
+# langchain, chat 모드 사용   
 from langchain.chat_models import ChatOpenAI
 chat_model = ChatOpenAI()
 
@@ -62,9 +62,8 @@ st.markdown("### Your Topics, Our AI Poems")
 # 그림 삽입
 col1, col2, col3 = st.columns([0.25, 0.5, 0.25])
 with col2:
-#    img = Image.open("AI-Poet.png")
-    img = Image.open("britychat.png")
-    to st.image(img)
+    img = Image.open("AI-Poet.png")
+    st.image(img)
 
 # 시 주제 입력 받음
 content = st.text_input("시의 주제를 제시해 주세요")
@@ -74,7 +73,7 @@ if st.button('시 작성 요청'):
     with st.spinner('시 작성 중... 잠시만 기다려 주세요'):
         result  = chat_model.predict(content + "에 대한 시를 써주세요")
         st.write(result)
-
+        
 # 수익화
 from streamlit_extras.buy_me_a_coffee import button
-button(username="jakukyr", floating=True, width=221)
+button(username="jakukyr", floating=True, width=221) 
