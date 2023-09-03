@@ -5,9 +5,9 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+# Streamlit! 첫번째 테스트
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+`/streamlit_app.py` 소스를 편집해서 이 앱을 원하는 대로 맞춤설정하세요 :heart:
 
 If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
 forums](https://discuss.streamlit.io).
