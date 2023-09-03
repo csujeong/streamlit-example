@@ -9,16 +9,16 @@ import streamlit as st
 
 `/streamlit_app.py` 소스를 편집해서 이 앱을 원하는 대로 맞춤설정하세요 :heart:
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+궁금한 점이 있으면 [설명서](https://docs.streamlit.io) 와 [community
+forums](https://discuss.streamlit.io) 을 확인해보세요~~^^
 
-In the meantime, below is an example of what you can do with just a few lines of code:
+다음은 단 몇 줄의 코드로 수행할 수 있는 작업의 예입니다.:
 """
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
+    total_points = st.slider("나선형의 포인트 수", 1, 5000, 2000)
+    num_turns = st.slider("나선형의 회전수", 1, 100, 9)
 
     Point = namedtuple('Point', 'x y')
     data = []
